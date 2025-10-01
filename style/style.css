@@ -101,7 +101,7 @@ main{
     gap:40px;
     background-color: var(--bgProdutos);
 }
-.categoriaProduto, .icon{
+.categoriaProduto{
     box-sizing: border-box;
     display:flex;
     flex-direction: column;
@@ -118,10 +118,18 @@ main{
 .categoriaProduto{
     box-shadow: 2px 2px 5px #00000069;
 }
-.icon{
+.iconeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 5rem;
     min-width: 7.63rem;
+    height: 7.63rem;
     color:var(--iconecolor);
+}
+.pontoBeneficio .iconeContainer{
+    background-color: var(--iconebg);
+    border-radius: 12px;
 }
 #compreJa{
     width:13rem;
@@ -227,7 +235,7 @@ main{
     flex-direction:row;
     gap:10px;
 }
-.pontoBeneficio .icon{
+.pontoBeneficio .iconeContainer{
     box-shadow: 2px 2px 5px #00000069;
 }
 footer{
@@ -236,4 +244,5 @@ footer{
     background-color: var(--main);
     color:#fff;
     padding:10px;
+    text-align: center;
 }

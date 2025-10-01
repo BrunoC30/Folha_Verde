@@ -1,33 +1,69 @@
 @media (max-width:984px) {
     body{
-       font-size: 1.6rem;
+       font-size: 1.2rem;
     }
     #hero{
-        height: 14rem;
+        height: 8rem;
     }
     #mainTitle,.titulo{
         font-size: 2.3rem;
     }
-    #containermain{
-        width: 70%;
-         padding: 0 0 40px 0;
+    .iconeContainer{
+        display: flex;
+        font-size: 3rem;
+        min-width: 4.63rem;
     }
-    #layoutDestaque{
-        height: 70%;
+    .categoriaProduto{
+        font-size: 1rem;
+        width:4.63rem;
+        height: 4.63rem;
+    }
+    #produtos{
         width: 90%;
+        height: auto;
+    }
+
+    #containermain{
+        width: 90%;
+         padding: 0 0 40px 0;
+         flex:1;
     }
     #destaque{
-        gap:4rem;
+        gap:1.4rem;
         justify-content: center;
+        padding:0 0 20px 0;
     }
+    /*Novo formato de layout para mobile*/
+    #layoutDestaque{
+        box-sizing: border-box;
+        height: 90%;
+        width: 90%;
+
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(3,1.3fr);
+    }
+    /*Ajuste para cada item*/
+    #first{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    #second, #three{
+        grid-column: 1/4;
+    }
+
+
     #tituloBeneficio{
         font-size: 1.3rem;
     }
     #beneficioContainer{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+    .pontoBeneficio .iconeContainer{
+        display:flex;
+        justify-content: center;
     }
     .descricao{
-        width: 70%;
+        width: 90%;
         font-size: 1.3rem;
     }
    

@@ -1,0 +1,34 @@
+@media (max-width:984px) {
+    body{
+       font-size: 1.6rem;
+    }
+    #hero{
+        height: 14rem;
+    }
+    #mainTitle,.titulo{
+        font-size: 2.3rem;
+    }
+    #containermain{
+        width: 70%;
+         padding: 0 0 40px 0;
+    }
+    #layoutDestaque{
+        height: 70%;
+        width: 90%;
+    }
+    #destaque{
+        gap:4rem;
+        justify-content: center;
+    }
+    #tituloBeneficio{
+        font-size: 1.3rem;
+    }
+    #beneficioContainer{
+        font-size: 1.3rem;
+    }
+    .descricao{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+   
+}

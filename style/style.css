@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --main:#508D64;
+    --bg:#E9E9E9;
+    --destaque:#139918;
+    --remendo:#c2ddc2;
+    --texto:#523B3B;
+    --logo:#8ADBA0;
+    --bgProdutos:#CACACA;
+
+    /* produtos*/
+    --iconebg:#8AB37E;
+    --iconecolor:#D5FFD8;
+    --iconeTexto:#EEFBB0;
+
+    /*Btão*/
+    --btaobg:#34E06D;
+    --btaocolor:#EDFFE4;
+
+    /*destaque*/
+    --destaquebg:#A29083;
+    --destaqueCard: #523B3B;
+
+    /*benefício*/
+}
+body{
+    min-height: 100dvh;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    color:var(--texto);
+    font-size: 1.5rem;
+    gap:2rem;
+}
+header{
+display: flex;
+flex-direction: column;
+}
+#bar{
+display: flex;
+height: 80px;
+align-items: center;
+font-size: 1.5rem;
+background-color: var(--main);
+color:var(--logo);
+gap:1rem;
+padding: 0 0 0 20px;
+}
+#logo{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.9rem;
+ height: 2.6rem;
+ width: 3rem;
+ background-color:var(--logo);
+ color:var(--iconecolor);
+}
+#hero{
+width: 90rem;
+height: 23.75rem;
+display: flex;
+background-position: top center;
+background-size: cover;
+background-image: url(/imgs/hero.png);
+}
+#heroDiv{
+display:flex;
+justify-content: center;
+background-color: var(--remendo);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+#mainTitle{
+    text-align: center;
+}
+#containermain{
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+#produtos{
+    user-select: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    padding:1.7rem;
+    border-radius: 12px;
+    gap:40px;
+    background-color: var(--bgProdutos);
+}
+.categoriaProduto, .icon{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7.63rem;
+    width: 7.63rem;
+    border-radius: 12px;
+    color:var(--iconeTexto);
+    background-color: var(--iconebg);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+.categoriaProduto{
+    box-shadow: 2px 2px 5px #00000069;
+}
+.icon{
+    font-size: 5rem;
+    min-width: 7.63rem;
+    color:var(--iconecolor);
+}
+#compreJa{
+    width:13rem;
+    height:3.75rem;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--btaobg);
+    color:var(--btaocolor);
+    font-size: 2rem;
+    box-shadow: 2px 2px 5px #00000069;
+    transition: transform 0.3s ease;
+}
+#compreJa:hover,.categoriaProduto:hover{
+    transform:scale(1.1);
+}
+#destaque{
+    box-sizing: border-box;
+    padding:2rem 0 0 0;
+    gap:1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85dvh;
+    background-color: var(--destaquebg);
+    user-select: none;
+}
+#layoutDestaque{
+    display: grid;
+    height: 80%;
+    width: 60%;
+    gap:2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.3fr 1fr;
+    background-color: var(--destaqueCard);
+    padding:30px;
+    border-radius: 12px;
+}
+.item{
+    background-color: #523B3B;
+}
+#first{
+    display:flex;
+    background-image: url("/imgs/cacto.png");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/4;
+}
+#second{
+    background-image: url("/imgs/shovel.png");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+}
+#three{
+    background-image: url("/imgs/SunflowerSeeds.png");
+    background-size: cover;
+    background-position: center right;
+}
+#first,#second,#three{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.nomeDestaque{
+    background-color:#221919e5;
+    color:#fff;
+    position:relative;
+    bottom:10px;
+    left: 10px;
+    font-size: 2rem;
+}
+.titulo{
+    color:#77594C;
+}
+#beneficios{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 0 0 20px 0;
+    flex:1;
+}
+#tituloBeneficio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#tituloBeneficio h1{
+ width: 33rem;
+}
+#beneficioContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 40px;
+    gap:40px;
+}
+.beneficio{
+    display:flex;
+}
+.pontoBeneficio{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+.pontoBeneficio .icon{
+    box-shadow: 2px 2px 5px #00000069;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--main);
+    color:#fff;
+    padding:10px;
+}

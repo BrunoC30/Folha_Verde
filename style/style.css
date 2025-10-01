@@ -65,7 +65,7 @@ height: 23.75rem;
 display: flex;
 background-position: top center;
 background-size: cover;
-background-image: url(/imgs/hero.png);
+background-image: url(imgs/hero.png);
 }
 #heroDiv{
 display:flex;
@@ -164,19 +164,19 @@ main{
 }
 #first{
     display:flex;
-    background-image: url("/imgs/cacto.png");
+    background-image: url("imgs/cacto.png");
     background-size: cover;
     background-position: center;
     grid-column: 1/4;
 }
 #second{
-    background-image: url("/imgs/shovel.png");
+    background-image: url("imgs/shovel.png");
     background-size: cover;
     background-position: center;
     grid-column: 1/3;
 }
 #three{
-    background-image: url("/imgs/SunflowerSeeds.png");
+    background-image: url("imgs/SunflowerSeeds.png");
     background-size: cover;
     background-position: center right;
 }
